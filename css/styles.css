@@ -11,28 +11,27 @@
 
 body{
     font-family: 'MiFuente';
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #564835;
+    color: #FFB752;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header.cabecera{
-    background-color: #1e1e2f;
-    color: #fff;
-    padding: 16px 20px;
+    background-color: #000000;
+    color: #FFB752;
+    padding: 30px 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
 }
-.logo{
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
+
 
 .boton-menu{
     font-size: 28px;
-    color: #fff;
+    color: #FFB752;
     text-decoration: none;
     display: none;
     cursor: pointer;
@@ -49,7 +48,7 @@ header.cabecera{
 }
 
 .menu-principal a{
-    color: #e0e0e0;
+    color: #FFB752;
     text-decoration: none;
     font-size: 16px;
     padding: 10px 14px;
@@ -59,8 +58,59 @@ header.cabecera{
 
 .menu-principal a:hover{
 
-    background-color: #292945;
-    color: #fff;
+    background-color: #FFB752;
+    color: #000000;
+}
+
+.presentacion{
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+
+
+.presentacion .parrafo{
+
+    padding: 20px;
+    flex: 60%;
+    
+}
+.boton-proyectos{
+
+    color: #FFB752;
+    background-color: #000000;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-top: 20px;
+    transition: background 0.3s, color 0.3s;
+
+}
+
+.boton-proyectos:hover{
+
+    background-color: #FFB752;
+    color: #000;
+}
+
+.Cristian{
+    flex: 25%;
+}
+
+.Cristian img{
+
+    width: 100%;
+    height: auto;
+
 }
 
 
@@ -69,8 +119,8 @@ header.cabecera{
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: #fff;
-    color: #000;
+    background-color: #564835;
+    color: #FFB752;
     border-radius: 8px;
     display:none;
     justify-content: space-between;
@@ -88,8 +138,8 @@ header.cabecera{
 
 .cookie-popup button{
 
-    background-color: #041930;
-    color: #fff;
+    background-color: #FFB752;
+    color: #000000;
     border: none;
     padding: 8px 14px;
     border-radius: 5px;
@@ -97,9 +147,16 @@ header.cabecera{
 }
 
 .cookie-popup a{
-    color: #041930;
+    color: #FFB752;
     text-decoration: underline;
 
+}
+
+.footer{
+
+    margin-top: auto;
+    text-align: center;
+    
 }
 
 @media screen and (max-width: 700px){
@@ -112,13 +169,13 @@ header.cabecera{
         display: none;
         flex-direction: column;
         gap: 12px;
-        background-color: #292945;
+        background-color: #000000;
         position: absolute;
         top: 100%;
         right: 0;
         padding-left: 0;
         padding: 15px 20px;
-        box-shadow: 0 6px 10px rgb(0,0,0,0,2);
+        box-shadow: 0 6px 10px rgb(0,0,0,0.2);
         z-index: 100;
     }
 
@@ -131,7 +188,77 @@ header.cabecera{
         font-size: 17px;
     }
 
-    main{
-        padding: 30px;
+    .presentacion{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        max-width: 680px;
+        margin: 24px auto 0;
+        margin-bottom: 5%;
+        padding-inline: 16px;
     }
+
+    .presentacion .parrafo{
+        flex: 0 1 auto;
+        max-width: 640px;
+        text-align: left;
+    }
+
+    .boton-proyectos{
+
+        display: block;
+        text-align: center;
+        margin: 18px 0 auto;
+    }
+
+    .Cristian{
+    flex: 0 1 auto;
+    width: 100%;
+    max-width: 420px;
+    padding: 0;
+    margin: 0 auto;
+    }
+    .Cristian img{
+    width: 100%;
+    height: auto;
+    display: block;
+    }
+
+}
+
+@media screen and(min-width: 701px) and (max-width: 1024px) {
+
+    .presentacion {
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    max-width: 1100px;
+    margin: 40px auto 0;
+    padding-inline: 24px;
+  }
+
+  .presentacion .parrafo {
+    flex: 0 1 60%;
+    text-align: left;
+    line-height: 1.4;
+  }
+
+  .Cristian {
+    flex: 0 1 38%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .Cristian img {
+    width: 100%;
+    height: auto;
+    max-width: 520px;
+    display: block;
+  }
+
+  .boton-proyectos {
+    display: inline-block;
+    margin-top: 18px;
+  }
+    
 }
