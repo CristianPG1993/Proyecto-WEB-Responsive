@@ -118,8 +118,7 @@ header.cabecera{
     position: fixed;
     bottom: 20px;
     left: 20px;
-    right: 20px;
-    background-color: #564835;
+    right: 20px;   
     color: #FFB752;
     border-radius: 8px;
     display:none;
@@ -158,6 +157,98 @@ header.cabecera{
     text-align: center;
     
 }
+
+/* ======= CSS privacidad.html ======*/
+
+.privacidad {
+    max-width: 900px;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+.privacidad h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.privacidad h4 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    color: #444;
+}
+
+.privacidad p {
+    margin-bottom: 0.8rem;
+    color: #555;
+}
+
+.cookies {
+    max-width: 900px;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff7e6;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+.cookies h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.cookies h4 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    color: #444;
+}
+
+.cookies p {
+    margin-bottom: 0.8rem;
+    color: #555;
+}
+
+/* ======= CSS proyectos.html ======*/
+
+.descripcion-proyectos{
+
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.proyectos{
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+}
+
+.proyecto{
+
+    background-color: #444;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+
+.proyecto img{
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 0 0 10px rgb(0,0,0,0.5);
+}
+
 
 @media screen and (max-width: 700px){
     
@@ -212,53 +303,125 @@ header.cabecera{
     }
 
     .Cristian{
-    flex: 0 1 auto;
-    width: 100%;
-    max-width: 420px;
-    padding: 0;
-    margin: 0 auto;
+        flex: 0 1 auto;
+        width: 100%;
+        max-width: 420px;
+        padding: 0;
+        margin: 0 auto;
     }
     .Cristian img{
-    width: 100%;
-    height: auto;
-    display: block;
+        width: 100%;
+        height: auto;
+        display: block;
     }
+
+    /* ======= CSS privacidad.html ======*/
+
+    .privacidad,
+    .cookies {
+        width: 94%;
+        padding: 1.2rem;
+        margin: 1rem auto;
+    }
+
+    .privacidad h2,
+    .cookies h2 {
+        font-size: 1.5rem;
+    }
+
+    .privacidad h4,
+    .cookies h4 {
+        font-size: 1rem;
+    }
+
+    .privacidad p,
+    .cookies p {
+        font-size: 0.95rem;
+    }
+
+    /* ====== CSS proyectos.html ===== */
+
+    .proyectos {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 16px;
+    }
+
+    .proyecto img {
+        width: 100%;
+        height: auto;
+    }
+
 
 }
 
-@media screen and(min-width: 701px) and (max-width: 1024px) {
+@media screen and (min-width: 701px) and (max-width: 1024px) {
 
     .presentacion {
-    flex-direction: row;
-    align-items: center;
-    gap: 32px;
-    max-width: 1100px;
-    margin: 40px auto 0;
-    padding-inline: 24px;
-  }
+        flex-direction: row;
+        align-items: center;
+        gap: 32px;
+        max-width: 1100px;
+        margin: 40px auto 0;
+        padding-inline: 24px;
+    }
 
-  .presentacion .parrafo {
-    flex: 0 1 60%;
-    text-align: left;
-    line-height: 1.4;
-  }
+    .presentacion .parrafo {
+        flex: 0 1 60%;
+        text-align: left;
+        line-height: 1.4;
+    }
 
-  .Cristian {
-    flex: 0 1 38%;
-    padding: 0;
-    margin: 0;
-  }
+    .Cristian {
+        flex: 0 1 38%;
+        padding: 0;
+        margin: 0;
+    }
 
-  .Cristian img {
-    width: 100%;
-    height: auto;
-    max-width: 520px;
-    display: block;
-  }
+    .Cristian img {
+        width: 100%;
+        height: auto;
+        max-width: 520px;
+        display: block;
+    }
 
-  .boton-proyectos {
-    display: inline-block;
-    margin-top: 18px;
-  }
+    .boton-proyectos {
+        display: inline-block;
+        margin-top: 18px;
+    }
+
+    /* ======= CSS privacidad.html ======*/
+
+   .privacidad,
+    .cookies {
+        width: 94%;
+        padding: 1.8rem;
+        margin: 1.5rem auto;
+    }
+
+    .privacidad h2,
+    .cookies h2 {
+        font-size: 1.8rem;
+    }
+
+    .privacidad h4,
+    .cookies h4 {
+        font-size: 1.1rem;
+    }
+
+    .privacidad p,
+    .cookies p {
+        font-size: 1rem;
+    }
+
+    /* ====== CSS proyectos.html ===== */
+
+  
+    .proyectos {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1.5rem;
+        gap: 20px;
+    }
+    
     
 }
