@@ -4,13 +4,19 @@
 }
 
 @font-face {
-    font-family: 'MiFuente';
+    font-family: 'Roboto';
     src: url(../tipografias/Roboto-Black.ttf);
+
+}
+
+@font-face {
+    font-family: 'Creativo';
+    src: url(../tipografias/Creativo\ Regular.otf);
 }
 
 
 body{
-    font-family: 'MiFuente';
+    font-family: 'Roboto';
     background-color: #564835;
     color: #FFB752;
     display: flex;
@@ -115,6 +121,9 @@ header.cabecera{
 
 
 .cookie-popup{
+
+    font-family: 'Creativo';
+    font-size: 1.3rem;
     position: fixed;
     bottom: 20px;
     left: 20px;
@@ -137,6 +146,7 @@ header.cabecera{
 
 .cookie-popup button{
 
+    font-family: 'Creativo';
     background-color: #FFB752;
     color: #000000;
     border: none;
