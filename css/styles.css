@@ -348,6 +348,42 @@ header.cabecera{
 }
 
 
+/* ====== CSS exito.html ===== */
+
+.confirmacion{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 180px auto;
+    max-width: 800px;
+    width: 80%;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #3a3a3a;
+}
+
+.boton-volver{
+
+    color: #FFB752;
+    padding: 10px 20px;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10px;
+    background-color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.8s, color 0.3s;
+
+}
+
+.boton-volver:hover{
+
+    color: #000;
+    background-color: #FFB752;
+
+}
+
 
 
 @media screen and (max-width: 700px){
